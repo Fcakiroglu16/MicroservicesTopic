@@ -1,3 +1,5 @@
+using MicroserviceSecond.API.Products;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,21 +18,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-	"Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
 
-app.MapGet("/weatherforecast",
-	() =>
-	{
-		var forecast = Enumerable.Range(1, 5).Select(index => new WeatherForecast(DateOnly.FromDateTime(DateTime.Now.AddDays(index)), Random.Shared.Next(-20, 55), summaries[Random.Shared.Next(summaries.Length)])).ToArray();
-		return forecast;
-	}).WithName("GetWeatherForecast").WithOpenApi();
+app.MapGroup("/api/products").MapProductApi().WithTags("Products Api");
+
+// app.MapGet("api/products", () => Results.Ok("all products"));
+// app.MapGet("api/products/{id:int}", (int id) => Results.Ok($"product with id({id})"));
+// app.MapPost("api/products", (ProductCreateRequestDto request) => 
+// Results.Created(string.Empty, $"created product with name({request.Name})"));
+// app.MapPut("api/products", (ProductUpdateRequestDto request) => Results.NoContent());
+// app.MapDelete("api/products/{id:int}", (int id) => Results.NoContent());
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-	public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
