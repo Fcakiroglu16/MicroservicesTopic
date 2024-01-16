@@ -3,3 +3,11 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+/.vs/MicroservicesTopic/config/applicationhost.config
+/.vs/MicroservicesTopic/FileContentIndex/629e7c8c-99d9-45eb-9bcc-adda70e35f0b.vsidx
+/.vs/MicroservicesTopic/v17/.suo
+/.vs/MicroservicesTopic/v17/.wsuo
+/.vs/ProjectEvaluation/microservicestopic.metadata.v7.bin
+/.vs/ProjectEvaluation/microservicestopic.projects.v7.bin
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
