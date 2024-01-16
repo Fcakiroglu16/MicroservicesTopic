@@ -13,3 +13,4 @@ riderModule.iml
 /.vs/VSWorkspaceState.json
 /.vs/MicroservicesTopic/DesignTimeBuild/.dtbcache.v2
 /.vs/MicroservicesTopic/v17/.futdcache.v2
+*.vsidx
