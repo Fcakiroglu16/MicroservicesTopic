@@ -30,6 +30,6 @@ app.MapGet("/api/SendRequestToMicroserviceTwo",
 
 
 		return Results.Ok(response);
-	}).WithName("GetWeatherForecast").WithOpenApi();
+	}).WithName("SendRequestToMicroserviceTwo").WithOpenApi();
 
 app.Run();
