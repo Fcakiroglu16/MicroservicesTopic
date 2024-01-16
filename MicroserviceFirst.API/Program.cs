@@ -10,20 +10,20 @@ builder.Services.AddSwaggerGen();
 
 
 #region BulkHead Design
+
 static IAsyncPolicy<HttpResponseMessage> GetBulkheadPolicy(int maxConcurrentRequests)
 {
     return Policy.BulkheadAsync(maxConcurrentRequests, int.MaxValue)
         .AsAsyncPolicy<HttpResponseMessage>();
-} 
+}
+
 #endregion
 
 builder.Services.AddHttpClient<MicroserviceSecondService>(configure =>
- {
-     configure.BaseAddress = new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!);
-
- }).AddPolicyHandler(GetBulkheadPolicy(10));
-
-
+{
+    configure.BaseAddress =
+        new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!);
+}).AddPolicyHandler(GetBulkheadPolicy(10));
 
 
 var app = builder.Build();
