@@ -1,4 +1,5 @@
 using MicroserviceFirst.API;
+using Polly;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,8 +7,23 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+#region BulkHead Design
+static IAsyncPolicy<HttpResponseMessage> GetBulkheadPolicy(int maxConcurrentRequests)
+{
+    return Policy.BulkheadAsync(maxConcurrentRequests, int.MaxValue)
+        .AsAsyncPolicy<HttpResponseMessage>();
+} 
+#endregion
+
 builder.Services.AddHttpClient<MicroserviceSecondService>(configure =>
-    configure.BaseAddress = new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!));
+ {
+     configure.BaseAddress = new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!);
+
+ }).AddPolicyHandler(GetBulkheadPolicy(10));
+
+
 
 
 var app = builder.Build();
