@@ -12,8 +12,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-	app.UseSwagger();
-	app.UseSwaggerUI();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
@@ -22,12 +22,14 @@ app.UseHttpsRedirection();
 app.MapGroup("/api/products").MapProductApi().WithTags("Products Api");
 
 #region legacy routing
+
 // app.MapGet("api/products", () => Results.Ok("all products"));
 // app.MapGet("api/products/{id:int}", (int id) => Results.Ok($"product with id({id})"));
 // app.MapPost("api/products", (ProductCreateRequestDto request) => 
 // Results.Created(string.Empty, $"created product with name({request.Name})"));
 // app.MapPut("api/products", (ProductUpdateRequestDto request) => Results.NoContent());
 // app.MapDelete("api/products/{id:int}", (int id) => Results.NoContent()); 
+
 #endregion
 
 app.Run();
