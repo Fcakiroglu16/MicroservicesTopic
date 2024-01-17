@@ -17,13 +17,18 @@ static IAsyncPolicy<HttpResponseMessage> GetBulkheadPolicy(int maxConcurrentRequ
         .AsAsyncPolicy<HttpResponseMessage>();
 }
 
+static IAsyncPolicy<HttpResponseMessage> GetTimeoutPolicy(int seconds)
+{
+    return Policy.TimeoutAsync<HttpResponseMessage>(seconds);
+}
+
 #endregion
 
 builder.Services.AddHttpClient<MicroserviceSecondService>(configure =>
 {
     configure.BaseAddress =
         new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!);
-}).AddPolicyHandler(GetBulkheadPolicy(10));
+}).AddPolicyHandler(GetBulkheadPolicy(10)).AddPolicyHandler(GetTimeoutPolicy(1));
 
 
 var app = builder.Build();
