@@ -1,0 +1,61 @@
+
+version: "2"
+
+services:
+  kafka:
+    image: docker.io/bitnami/kafka:3.6
+    ports:
+      - "9092:9092"
+      - "9094:9094"
+    volumes:
+      - "kafka_data:/bitnami"
+    environment:
+      # KRaft settings
+      - KAFKA_CFG_NODE_ID=0
+      - KAFKA_CFG_PROCESS_ROLES=controller,broker
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=0@kafka:9093
+      # Listeners
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:9094
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,EXTERNAL://localhost:9094
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT
+  kafka-ui:
+    container_name: kafka-ui
+    image: provectuslabs/kafka-ui:latest
+    ports:
+      - 8080:8080
+    environment:
+      DYNAMIC_CONFIG_ENABLED: 'true'
+    depends_on:
+      - kafka
+  sqlserver-db:
+   image: mcr.microsoft.com/mssql/server:2022-latest
+   ports:
+    - 1433:1433 
+   environment:
+    SA_PASSWORD: "Your_password123"
+    ACCEPT_EULA: "Y"
+    MSSQL_AGENT_ENABLED: true
+   volumes:
+    - sql_db:/var/opt/mssql
+  connector:
+    image: debezium/connect:latest
+    environment:
+     GROUP_ID: 1
+     CONFIG_STORAGE_TOPIC: my_connect_configs
+     OFFSET_STORAGE_TOPIC: my_connect_offsets
+     BOOTSTRAP_SERVERS: kafka:9092
+    ports:
+    - 8083:8083
+    depends_on:
+      - kafka
+      - sqlserver-db
+volumes:
+  kafka_data:
+    driver: local
+  sql_db:
+    driver: local
+
+
+
