@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Nodes;
+﻿using System.Text.Json;
+using System.Text.Json.Nodes;
 using Confluent.Kafka;
 using MicroserviceSecond.API.Models;
 using static Confluent.Kafka.ConfigPropertyNames;
@@ -31,31 +32,54 @@ namespace MicroserviceSecond.API.BackgroundServices
             {
                 var consumeResult = _consumer!.Consume();
 
-
-                var jsonNode = JsonNode.Parse(consumeResult.Message.Value);
-
-                var payload = jsonNode?["payload"]!;
-                var after = payload?["after"]!;
-
-                var opt = payload?["op"]!.GetValue<string>();
+                var message = consumeResult.Message.Value;
 
 
-                //satırdaki ‘op’ alanındaki c, u, d ve r değerleri ifade etmektedir.
+                #region 2. way
 
-                var product = new ProductChangeDataCaptureModel
-                {
-                    Id = after["Id"]!.GetValue<int>(),
-                    Name = after["Name"]!.GetValue<string>()
-                };
-                var priceAsString = after["Price"]?.GetValue<string>();
+                var productChangeDataCapture =
+                    JsonSerializer.Deserialize<ProductChangeDataCaptureModel2>(message,
+                        new JsonSerializerOptions()
+                        {
+                            PropertyNameCaseInsensitive = true,
+                            IncludeFields = true
+                        });
+
+                var product = productChangeDataCapture.Payload.After;
+                var op = productChangeDataCapture.Payload.Op;
+                Console.WriteLine($"Operation: {op}, Product: {product.Id} - {product.Name} - {product.Price}");
+
+                #endregion
 
 
-                if (!string.IsNullOrEmpty(priceAsString))
-                {
-                    product.Price = decimal.Parse(priceAsString);
-                }
+                #region 1. way
 
-                Console.WriteLine($"Operation: {opt}, Product: {product.Id} - {product.Name} - {product.Price}");
+                //var jsonNode = JsonNode.Parse(consumeResult.Message.Value);
+
+                //var payload = jsonNode?["payload"]!;
+                //var after = payload?["after"]!;
+
+                //var op = payload?["op"]!.GetValue<string>();
+
+
+                ////satırdaki ‘op’ alanındaki c, u, d ve r değerleri ifade etmektedir.
+
+                //var product = new ProductChangeDataCaptureModel
+                //{
+                //    Id = after["Id"]!.GetValue<int>(),
+                //    Name = after["Name"]!.GetValue<string>()
+                //};
+                //var priceAsString = after["Price"]?.GetValue<string>();
+
+
+                //if (!string.IsNullOrEmpty(priceAsString))
+                //{
+                //    product.Price = decimal.Parse(priceAsString);
+                //}
+
+                //Console.WriteLine($"Operation: {opt}, Product: {product.Id} - {product.Name} - {product.Price}"); 
+
+                #endregion
 
                 _consumer.Commit(consumeResult);
 
