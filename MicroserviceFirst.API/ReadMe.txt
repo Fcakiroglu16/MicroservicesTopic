@@ -39,7 +39,7 @@ https://hub.docker.com/r/debezium/connect
 
 
  Kafka Connect REST API For Debezium
-
+ POST http://localhost:8083/connectors
  {
     "name": "product-connector", 
     "config": {
