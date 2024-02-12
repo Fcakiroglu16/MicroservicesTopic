@@ -1,8 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceFirst.API", "MicroserviceFirst.API\MicroserviceFirst.API.csproj", "{549EDE38-DF13-4782-8202-EE1114FFCDC6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceSecond.API", "MicroserviceSecond.API\MicroserviceSecond.API.csproj", "{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceFirst.API", "MicroserviceFirst.API\MicroserviceFirst.API.csproj", "{549EDE38-DF13-4782-8202-EE1114FFCDC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +15,8 @@ Global
 		{549EDE38-DF13-4782-8202-EE1114FFCDC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{549EDE38-DF13-4782-8202-EE1114FFCDC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{549EDE38-DF13-4782-8202-EE1114FFCDC6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
