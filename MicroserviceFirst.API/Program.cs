@@ -1,5 +1,11 @@
+using System.Reflection;
+using MediatR;
 using MicroserviceFirst.API;
+using MicroserviceFirst.API.BackgroundServices;
 using MicroserviceFirst.API.Models;
+using MicroserviceFirst.API.Products.ProductStream;
+using MicroserviceFirst.API.ProductUseCases.ProductCreate;
+using MicroserviceFirst.API.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,14 +14,36 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddHttpClient<MicroserviceSecondService>(configure =>
-    configure.BaseAddress = new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!));
 
-
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<KafkaProductStream>();
+builder.Services.AddSingleton<KafkaServiceBusInitialize>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
 
+builder.Services.AddHostedService<ProductStreamBackgroundServices>();
+
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var kafkaServiceBusInitialize = scope.ServiceProvider.GetRequiredService<KafkaServiceBusInitialize>();
+    await kafkaServiceBusInitialize.CreateTopics();
+
+
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+    if (!dbContext.Categories.Any())
+    {
+        dbContext.Categories.Add(new Category { Name = "Category 1" });
+        dbContext.Categories.Add(new Category { Name = "Category 2" });
+        dbContext.Categories.Add(new Category { Name = "Category 3" });
+
+
+        dbContext.SaveChanges();
+    }
+}
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -27,30 +55,21 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapPost("/api/products/create", async (AppDbContext context) =>
+app.MapPost("/api/products/create", async (ProductCreateCommand productCreateCommand, IMediator mediator) =>
 {
-    context.Products.Add(new Product() { Name = "Pen 1", Price = 100 });
-    context.SaveChanges();
+    var result = await mediator.Send(productCreateCommand);
 
-    return Results.Ok("Product created");
+    return Results.Created(string.Empty, result);
 });
 
 app.MapPost("/api/products/update", async (AppDbContext context) =>
 {
-    var product = context.Products.First();
+    var product = await context.Products.FirstAsync();
     product.Name = $"{product.Name}- {product.Name}";
     context.SaveChanges();
 
     return Results.Ok("Product created");
 });
 
-app.MapGet("/api/SendRequestToMicroserviceTwo",
-    async (MicroserviceSecondService secondMicroserviceService) =>
-    {
-        var response = await secondMicroserviceService.GetProducts();
-
-
-        return Results.Ok(response);
-    }).WithName("SendRequestToMicroserviceTwo").WithOpenApi();
 
 app.Run();

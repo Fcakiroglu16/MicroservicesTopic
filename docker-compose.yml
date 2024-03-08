@@ -27,35 +27,19 @@ services:
       - 8080:8080
     environment:
       DYNAMIC_CONFIG_ENABLED: 'true'
-    depends_on:
-      - kafka
-  sqlserver-db:
-   image: mcr.microsoft.com/mssql/server:2022-latest
-   ports:
-    - 1433:1433 
-   environment:
-    SA_PASSWORD: "Your_password123"
-    ACCEPT_EULA: "Y"
-    MSSQL_AGENT_ENABLED: true
-   volumes:
-    - sql_db:/var/opt/mssql
-  connector:
-    image: debezium/connect:latest
-    environment:
-     GROUP_ID: 1
-     CONFIG_STORAGE_TOPIC: my_connect_configs
-     OFFSET_STORAGE_TOPIC: my_connect_offsets
-     BOOTSTRAP_SERVERS: kafka:9092
-    ports:
-    - 8083:8083
-    depends_on:
-      - kafka
-      - sqlserver-db
+  schema-registry:
+      image: bitnami/schema-registry
+      ports:
+        - "8081:8081"
+      depends_on:
+        - kafka
+      environment:
+        - SCHEMA_REGISTRY_KAFKA_BROKERS=PLAINTEXT://kafka:9092
+        - SCHEMA_REGISTRY_HOST_NAME=schema-registry
+        - SCHEMA_REGISTRY_LISTENERS=http://0.0.0.0:8081
+       
+
+
 volumes:
   kafka_data:
     driver: local
-  sql_db:
-    driver: local
-
-
-
