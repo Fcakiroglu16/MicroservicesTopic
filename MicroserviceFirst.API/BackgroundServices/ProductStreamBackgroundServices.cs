@@ -2,6 +2,7 @@
 using MicroserviceFirst.API.Products.ProductStream;
 using MicroserviceFirst.API.Products.ProductStream.Events;
 using MicroserviceFirst.API.ServiceBus;
+using Newtonsoft.Json.Linq;
 
 namespace MicroserviceFirst.API.BackgroundServices
 {
@@ -19,6 +20,9 @@ namespace MicroserviceFirst.API.BackgroundServices
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            //you can write generic Json record
+
+
             var vehicleConsumer = new JsonConsumer<ProductCreatedEvent>(
                 configuration.GetSection("Kafka")["BootstrapServers"]!, "http://localhost:8081",
                 KafkaProductStream.ProductStreamGroupName, KafkaProductStream.ProductStreamTopic);
@@ -37,7 +41,7 @@ namespace MicroserviceFirst.API.BackgroundServices
                 if (consumeResult is not null)
                 {
                     var productCreatedEvent = consumeResult.Message.Value;
-                    Console.WriteLine($"{productCreatedEvent.Name}");
+                    //Console.WriteLine($"{productCreatedEvent.Name}");
 
                     vehicleConsumer.Consumer.Commit(consumeResult);
                 }

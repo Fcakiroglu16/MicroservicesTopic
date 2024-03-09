@@ -16,6 +16,7 @@ namespace MicroserviceFirst.API.KafkaServiceBus.Consumer
         {
             AddSchemaRegistry();
 
+
             Consumer =
                 new ConsumerBuilder<string, T>(ConsumerConfig)
                     .SetKeyDeserializer(Deserializers.Utf8)

@@ -20,7 +20,7 @@ namespace MicroserviceFirst.API.KafkaServiceBus.Producer
             ProducerConfig = new ProducerConfig
             {
                 BootstrapServers = bootstrapServers,
-                Acks = Acks.All
+                Acks = Acks.All,
             };
 
             SchemaRegistryConfig = new SchemaRegistryConfig

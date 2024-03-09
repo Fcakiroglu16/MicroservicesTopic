@@ -1,4 +1,5 @@
 ﻿using Confluent.Kafka;
+using Confluent.SchemaRegistry;
 using Confluent.SchemaRegistry.Serdes;
 
 namespace MicroserviceFirst.API.KafkaServiceBus.Producer
@@ -13,7 +14,8 @@ namespace MicroserviceFirst.API.KafkaServiceBus.Producer
 
             Producer =
                 new ProducerBuilder<string, T>(ProducerConfig)
-                    .SetValueSerializer(new JsonSerializer<T>(SchemaRegistry))
+                    .SetValueSerializer(new JsonSerializer<T>(SchemaRegistry,
+                        new JsonSerializerConfig() { SubjectNameStrategy = SubjectNameStrategy.Record }))
                     .Build();
         }
     }

@@ -10,16 +10,16 @@ namespace MicroserviceFirst.API.Products.ProductStream
         public const string ProductStreamGroupName = "product-stream-group-a";
 
 
-        public async Task Publish(string key, ProductCreatedEvent productCreatedEvent)
+        public async Task Publish<T>(string key, T @event) where T : class
         {
-            var producer = new JsonProducer<ProductCreatedEvent>(
+            var producer = new JsonProducer<T>(
                 configuration.GetSection("Kafka")["BootstrapServers"]!, "http://localhost:8081",
                 ProductStreamTopic);
 
             producer.Build();
 
 
-            await producer.ProduceAsync(productCreatedEvent, key);
+            await producer.ProduceAsync(@event, key);
             //}
         }
     }
