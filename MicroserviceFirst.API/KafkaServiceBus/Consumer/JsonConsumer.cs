@@ -1,22 +1,20 @@
-﻿using Common;
-using Confluent.Kafka;
+﻿using Confluent.Kafka;
 using Confluent.Kafka.SyncOverAsync;
 using Confluent.SchemaRegistry.Serdes;
-using MicroserviceFirst.API.Products.ProductStream;
 
-namespace JsonConsole
+namespace MicroserviceFirst.API.KafkaServiceBus.Consumer
 {
-    internal class JsonConsumer<T> : ConsumerBase<T>
+    internal class JsonConsumer<T>(
+        string bootstrapServers,
+        string schemaRegistryUrl,
+        string consumerGroup,
+        string topic)
+        : ConsumerBase<T>(bootstrapServers, schemaRegistryUrl, consumerGroup, topic)
         where T : class
     {
-        public JsonConsumer(string bootstrapServers, string schemaRegistryUrl, string consumerGroup, string topic)
-            : base(bootstrapServers, schemaRegistryUrl, consumerGroup, topic)
-        {
-        }
-
         public void Build()
         {
-            base.AddSchemaRegistry();
+            AddSchemaRegistry();
 
             Consumer =
                 new ConsumerBuilder<string, T>(ConsumerConfig)

@@ -1,8 +1,7 @@
-﻿using Common;
-using Confluent.Kafka;
+﻿using Confluent.Kafka;
 using Confluent.SchemaRegistry.Serdes;
 
-namespace JsonConsole
+namespace MicroserviceFirst.API.KafkaServiceBus.Producer
 {
     public class JsonProducer<T>(string bootstrapServers, string schemaRegistryUrl, string topic)
         : ProducerBase<T>(bootstrapServers, schemaRegistryUrl, topic)
@@ -10,7 +9,7 @@ namespace JsonConsole
     {
         public void Build()
         {
-            base.AddSchemaRegistry();
+            AddSchemaRegistry();
 
             Producer =
                 new ProducerBuilder<string, T>(ProducerConfig)

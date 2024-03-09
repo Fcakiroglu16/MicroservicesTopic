@@ -1,7 +1,7 @@
 ﻿using Confluent.Kafka;
 using Confluent.SchemaRegistry;
 
-namespace Common
+namespace MicroserviceFirst.API.KafkaServiceBus.Producer
 {
     public abstract class ProducerBase<T>
         where T : class
@@ -13,13 +13,14 @@ namespace Common
         protected IProducer<string, T> Producer;
 
 
-        public ProducerBase(string bootstrapServers, string schemaRegistryUrl, string topic)
+        protected ProducerBase(string bootstrapServers, string schemaRegistryUrl, string topic)
         {
             Topic = topic;
 
             ProducerConfig = new ProducerConfig
             {
-                BootstrapServers = bootstrapServers
+                BootstrapServers = bootstrapServers,
+                Acks = Acks.All
             };
 
             SchemaRegistryConfig = new SchemaRegistryConfig
@@ -33,9 +34,9 @@ namespace Common
             SchemaRegistry = new CachedSchemaRegistryClient(SchemaRegistryConfig);
         }
 
-        public async Task ProduceAsync(T message)
+        public async Task ProduceAsync(T message, string key)
         {
-            await Producer.ProduceAsync(Topic, new Message<string, T> { Value = message });
+            await Producer.ProduceAsync(Topic, new Message<string, T> { Value = message, Key = key });
         }
 
         public void Close()

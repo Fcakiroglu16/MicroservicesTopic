@@ -1,15 +1,12 @@
-﻿using Confluent.Kafka;
-using JsonConsole;
+﻿using MicroserviceFirst.API.KafkaServiceBus.Consumer;
 using MicroserviceFirst.API.Products.ProductStream;
 using MicroserviceFirst.API.Products.ProductStream.Events;
-using static Confluent.Kafka.ConfigPropertyNames;
+using MicroserviceFirst.API.ServiceBus;
 
 namespace MicroserviceFirst.API.BackgroundServices
 {
     public class ProductStreamBackgroundServices(IConfiguration configuration) : BackgroundService
     {
-        private IConsumer<string, EventBase>? _consumer;
-
         public override Task StartAsync(CancellationToken cancellationToken)
         {
             return base.StartAsync(cancellationToken);
@@ -40,21 +37,11 @@ namespace MicroserviceFirst.API.BackgroundServices
                 if (consumeResult is not null)
                 {
                     var productCreatedEvent = consumeResult.Message.Value;
+                    Console.WriteLine($"{productCreatedEvent.Name}");
 
-
-                    var name = productCreatedEvent.Name;
-                    ;
-                    //var a = consumeResult.Message.Value as ProductCreatedEvent;
-
-
-                    //var productCreatedEvent = consumeResult.Message.Value;
-
-
-                    //Console.WriteLine(productCreatedEvent);
-                    //_consumer.Commit(consumeResult);
+                    vehicleConsumer.Consumer.Commit(consumeResult);
                 }
 
-                Console.WriteLine("While");
 
                 await Task.Delay(1000, stoppingToken);
             }
