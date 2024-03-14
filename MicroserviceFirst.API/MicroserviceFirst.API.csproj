@@ -11,6 +11,7 @@
 
     <ItemGroup>
         <PackageReference Include="Confluent.Kafka" Version="2.3.0" />
+        <PackageReference Include="Confluent.SchemaRegistry.Serdes.Avro" Version="2.3.0" />
         <PackageReference Include="Confluent.SchemaRegistry.Serdes.Json" Version="2.3.0" />
         <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />

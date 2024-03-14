@@ -1,0 +1,15 @@
+{
+    "namespace": "SchemaRegistryExamples.Avro",
+    "name": "ProductNameUpdatedEvent",
+    "type": "record",
+    "fields": [
+      {
+        "name": "Id",
+        "type": "string"
+      },
+      {
+        "name": "Name",
+        "type": "string"
+      } 
+    ]
+}

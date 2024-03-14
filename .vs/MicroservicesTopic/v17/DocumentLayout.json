@@ -7,12 +7,55 @@
       "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\backgroundservices\\productstreambackgroundservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\kafkaservicebus\\consumer\\jsonconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\kafkaservicebus\\consumer\\jsonconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/FATIH_SQLEXPRESS/EventsourcingDb/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\kafkaservicebus\\consumer\\consumerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\kafkaservicebus\\consumer\\consumerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Migrations\\20240314225003_three.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MicroserviceFirst.API\\Migrations\\20240314225003_three.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\products\\productstream\\kafkaproductstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\products\\productstream\\kafkaproductstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\kafkaservicebus\\kafkaservicebusinitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\kafkaservicebus\\kafkaservicebusinitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\products\\productnameupdate\\updateproductnamecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\products\\productnameupdate\\updateproductnamecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\products\\productcreate\\productcreatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\products\\productcreate\\productcreatecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\products\\productcreate\\productcreatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\products\\productcreate\\productcreatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\products\\productstream\\events\\schemaregistryexamples\\avro\\productcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\products\\productstream\\events\\schemaregistryexamples\\avro\\productcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\products\\productstream\\events\\productcreatedevent.avsc||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\products\\productstream\\events\\productcreatedevent.avsc||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,55 +65,189 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/FATIH_SQLEXPRESS/EventsourcingDb/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-14T22:53:06.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240314225003_three.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Migrations\\20240314225003_three.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Migrations\\20240314225003_three.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Migrations\\20240314225003_three.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Migrations\\20240314225003_three.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:50:03.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Models\\Category.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:48:53.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Models\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:45:38.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Models\\Product.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:41:35.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KafkaServiceBusInitialize.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\KafkaServiceBus\\KafkaServiceBusInitialize.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\KafkaServiceBus\\KafkaServiceBusInitialize.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\KafkaServiceBus\\KafkaServiceBusInitialize.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\KafkaServiceBus\\KafkaServiceBusInitialize.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:31:43.517Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ProductStreamBackgroundServices.cs",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\BackgroundServices\\ProductStreamBackgroundServices.cs",
               "RelativeDocumentMoniker": "MicroserviceFirst.API\\BackgroundServices\\ProductStreamBackgroundServices.cs",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\BackgroundServices\\ProductStreamBackgroundServices.cs",
-              "RelativeToolTip": "MicroserviceFirst.API\\BackgroundServices\\ProductStreamBackgroundServices.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA5wBkAAABGAAAA",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\BackgroundServices\\ProductStreamBackgroundServices.cs \u2B24",
+              "RelativeToolTip": "MicroserviceFirst.API\\BackgroundServices\\ProductStreamBackgroundServices.cs \u2B24",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwDEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T01:06:13.258Z",
+              "WhenOpened": "2024-03-14T22:31:02.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConsumerBase.cs",
-              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\KafkaServiceBus\\Consumer\\ConsumerBase.cs",
-              "RelativeDocumentMoniker": "MicroserviceFirst.API\\KafkaServiceBus\\Consumer\\ConsumerBase.cs",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\KafkaServiceBus\\Consumer\\ConsumerBase.cs",
-              "RelativeToolTip": "MicroserviceFirst.API\\KafkaServiceBus\\Consumer\\ConsumerBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "DocumentIndex": 7,
+              "Title": "KafkaProductStream.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductStream\\KafkaProductStream.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Products\\ProductStream\\KafkaProductStream.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductStream\\KafkaProductStream.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Products\\ProductStream\\KafkaProductStream.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T01:04:49.136Z",
+              "WhenOpened": "2024-03-14T22:29:24.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JsonConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\KafkaServiceBus\\Consumer\\JsonConsumer.cs",
-              "RelativeDocumentMoniker": "MicroserviceFirst.API\\KafkaServiceBus\\Consumer\\JsonConsumer.cs",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\KafkaServiceBus\\Consumer\\JsonConsumer.cs",
-              "RelativeToolTip": "MicroserviceFirst.API\\KafkaServiceBus\\Consumer\\JsonConsumer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBAAAAAgAAAA",
+              "DocumentIndex": 9,
+              "Title": "UpdateProductNameCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductNameUpdate\\UpdateProductNameCommandHandler.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Products\\ProductNameUpdate\\UpdateProductNameCommandHandler.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductNameUpdate\\UpdateProductNameCommandHandler.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Products\\ProductNameUpdate\\UpdateProductNameCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T01:00:08.841Z",
+              "WhenOpened": "2024-03-14T22:28:45.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Program.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Program.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Program.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:28:29.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductCreateCommand.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductCreate\\ProductCreateCommand.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Products\\ProductCreate\\ProductCreateCommand.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductCreate\\ProductCreateCommand.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Products\\ProductCreate\\ProductCreateCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:28:22.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductCreatedEvent.avsc",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductStream\\Events\\ProductCreatedEvent.avsc",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Products\\ProductStream\\Events\\ProductCreatedEvent.avsc",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductStream\\Events\\ProductCreatedEvent.avsc",
+              "RelativeToolTip": "MicroserviceFirst.API\\Products\\ProductStream\\Events\\ProductCreatedEvent.avsc",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-14T22:27:49.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductStream\\Events\\SchemaRegistryExamples\\Avro\\ProductCreatedEvent.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Products\\ProductStream\\Events\\SchemaRegistryExamples\\Avro\\ProductCreatedEvent.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductStream\\Events\\SchemaRegistryExamples\\Avro\\ProductCreatedEvent.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Products\\ProductStream\\Events\\SchemaRegistryExamples\\Avro\\ProductCreatedEvent.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwCQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:27:36.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductCreateCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductCreate\\ProductCreateCommandHandler.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Products\\ProductCreate\\ProductCreateCommandHandler.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Products\\ProductCreate\\ProductCreateCommandHandler.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Products\\ProductCreate\\ProductCreateCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:27:29.029Z",
               "EditorCaption": ""
             }
           ]

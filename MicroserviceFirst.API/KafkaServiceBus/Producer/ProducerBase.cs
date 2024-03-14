@@ -1,48 +1,47 @@
 ﻿using Confluent.Kafka;
 using Confluent.SchemaRegistry;
 
-namespace MicroserviceFirst.API.KafkaServiceBus.Producer
+namespace MicroserviceFirst.API.KafkaServiceBus.Producer;
+
+public abstract class ProducerBase<T>
+    where T : class
 {
-    public abstract class ProducerBase<T>
-        where T : class
+    protected readonly ProducerConfig ProducerConfig;
+    protected readonly SchemaRegistryConfig SchemaRegistryConfig;
+    protected readonly string Topic;
+    protected IProducer<string, T> Producer;
+    protected CachedSchemaRegistryClient SchemaRegistry;
+
+
+    protected ProducerBase(string bootstrapServers, string schemaRegistryUrl, string topic)
     {
-        protected readonly string Topic;
-        protected readonly ProducerConfig ProducerConfig;
-        protected readonly SchemaRegistryConfig SchemaRegistryConfig;
-        protected CachedSchemaRegistryClient SchemaRegistry;
-        protected IProducer<string, T> Producer;
+        Topic = topic;
 
-
-        protected ProducerBase(string bootstrapServers, string schemaRegistryUrl, string topic)
+        ProducerConfig = new ProducerConfig
         {
-            Topic = topic;
+            BootstrapServers = bootstrapServers,
+            Acks = Acks.All
+        };
 
-            ProducerConfig = new ProducerConfig
-            {
-                BootstrapServers = bootstrapServers,
-                Acks = Acks.All,
-            };
-
-            SchemaRegistryConfig = new SchemaRegistryConfig
-            {
-                Url = schemaRegistryUrl
-            };
-        }
-
-        protected void AddSchemaRegistry()
+        SchemaRegistryConfig = new SchemaRegistryConfig
         {
-            SchemaRegistry = new CachedSchemaRegistryClient(SchemaRegistryConfig);
-        }
+            Url = schemaRegistryUrl
+        };
+    }
 
-        public async Task ProduceAsync(T message, string key)
-        {
-            await Producer.ProduceAsync(Topic, new Message<string, T> { Value = message, Key = key });
-        }
+    protected void AddSchemaRegistry()
+    {
+        SchemaRegistry = new CachedSchemaRegistryClient(SchemaRegistryConfig);
+    }
 
-        public void Close()
-        {
-            Producer.Dispose();
-            SchemaRegistry.Dispose();
-        }
+    public async Task ProduceAsync(T message, string key)
+    {
+        await Producer.ProduceAsync(Topic, new Message<string, T> { Value = message, Key = key });
+    }
+
+    public void Close()
+    {
+        Producer.Dispose();
+        SchemaRegistry.Dispose();
     }
 }

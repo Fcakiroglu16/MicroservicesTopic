@@ -1,11 +1,11 @@
 using System.Reflection;
 using MediatR;
-using MicroserviceFirst.API;
 using MicroserviceFirst.API.BackgroundServices;
+using MicroserviceFirst.API.KafkaServiceBus;
 using MicroserviceFirst.API.Models;
+using MicroserviceFirst.API.Products.ProductCreate;
+using MicroserviceFirst.API.Products.ProductNameUpdate;
 using MicroserviceFirst.API.Products.ProductStream;
-using MicroserviceFirst.API.ProductUseCases.ProductCreate;
-using MicroserviceFirst.API.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +22,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
 
 builder.Services.AddHostedService<ProductStreamBackgroundServices>();
+
+//builder.Services.AddHostedService<ProductNameUpdatedBackgroundServices>();
 
 var app = builder.Build();
 
@@ -62,14 +64,13 @@ app.MapPost("/api/products/create", async (ProductCreateCommand productCreateCom
     return Results.Created(string.Empty, result);
 });
 
-app.MapPost("/api/products/update", async (AppDbContext context) =>
-{
-    var product = await context.Products.FirstAsync();
-    product.Name = $"{product.Name}- {product.Name}";
-    context.SaveChanges();
+app.MapPost("/api/products/UpdateProductName",
+    async (UpdateProductNameCommand updateProductNameCommand, IMediator mediator) =>
+    {
+        var result = await mediator.Send(updateProductNameCommand);
 
-    return Results.Ok("Product created");
-});
+        return Results.NoContent();
+    });
 
 
 app.Run();

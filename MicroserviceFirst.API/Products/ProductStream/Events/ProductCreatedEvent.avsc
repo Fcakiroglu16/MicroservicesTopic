@@ -1,0 +1,28 @@
+{
+    "namespace": "SchemaRegistryExamples.Avro",
+    "name": "ProductCreatedEvent",
+    "type": "record",
+    "fields": [
+      {
+        "name": "Id",
+        "type": "string"
+      },
+      {
+        "name": "Name",
+        "type": "string"
+      },
+
+      {
+        "name": "Price",
+        "type": "double"
+      },
+      {
+        "name": "Stock",
+        "type": "int"
+      },
+      {
+        "name": "CategoryId",
+        "type": "int"
+      } 
+    ]
+}

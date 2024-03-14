@@ -1,54 +1,80 @@
-﻿using MicroserviceFirst.API.KafkaServiceBus.Consumer;
+﻿using Avro.Generic;
+using MicroserviceFirst.API.KafkaServiceBus.Consumer;
+using MicroserviceFirst.API.Models;
 using MicroserviceFirst.API.Products.ProductStream;
-using MicroserviceFirst.API.Products.ProductStream.Events;
-using MicroserviceFirst.API.ServiceBus;
-using Newtonsoft.Json.Linq;
 
-namespace MicroserviceFirst.API.BackgroundServices
+namespace MicroserviceFirst.API.BackgroundServices;
+
+public class ProductStreamBackgroundServices(IConfiguration configuration, IServiceProvider serviceProvider)
+    : BackgroundService
 {
-    public class ProductStreamBackgroundServices(IConfiguration configuration) : BackgroundService
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        public override Task StartAsync(CancellationToken cancellationToken)
+        var vehicleConsumer = new AvroConsumer<GenericRecord>(
+            configuration.GetSection("Kafka")["BootstrapServers"]!, "http://localhost:8081",
+            KafkaProductStream.ProductStreamGroupName, KafkaProductStream.ProductStreamTopic);
+
+
+        vehicleConsumer.Build();
+
+
+        while (!stoppingToken.IsCancellationRequested)
         {
-            return base.StartAsync(cancellationToken);
-        }
+            //var consumeResult = vehicleConsumer.Consume(stoppingToken);
 
-        public override Task StopAsync(CancellationToken cancellationToken)
-        {
-            return base.StopAsync(cancellationToken);
-        }
-
-        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-        {
-            //you can write generic Json record
+            var consumeResult = vehicleConsumer.Consumer!.Consume(1000);
 
 
-            var vehicleConsumer = new JsonConsumer<ProductCreatedEvent>(
-                configuration.GetSection("Kafka")["BootstrapServers"]!, "http://localhost:8081",
-                KafkaProductStream.ProductStreamGroupName, KafkaProductStream.ProductStreamTopic);
-
-
-            vehicleConsumer.Build();
-
-
-            while (!stoppingToken.IsCancellationRequested)
+            if (consumeResult is not null)
             {
-                //var consumeResult = vehicleConsumer.Consume(stoppingToken);
-
-                var consumeResult = vehicleConsumer.Consumer.Consume(1000);
+                var valueResult = consumeResult.Message.Value;
 
 
-                if (consumeResult is not null)
+                using var scope = serviceProvider.CreateScope();
+                var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+                if (valueResult.Schema.Name == "ProductCreatedEvent")
                 {
-                    var productCreatedEvent = consumeResult.Message.Value;
-                    //Console.WriteLine($"{productCreatedEvent.Name}");
+                    //read field
+                    var id = Guid.Parse(valueResult["Id"].ToString()!);
+                    var name = Convert.ToString(valueResult["Name"]);
+                    var price = Convert.ToDouble(valueResult["Price"]);
+                    var stock = Convert.ToInt32(valueResult["Stock"]);
+                    var categoryId = Convert.ToInt32(valueResult["CategoryId"]);
 
-                    vehicleConsumer.Consumer.Commit(consumeResult);
+
+                    var newProduct = new Product
+                    {
+                        Id = id,
+                        Name = name!,
+                        Price = price,
+                        Stock = stock,
+                        CategoryId = categoryId
+                    };
+
+
+                    dbContext.Products.Add(newProduct);
+                    await dbContext.SaveChangesAsync(stoppingToken);
+                }
+                else if (valueResult.Schema.Name == "ProductNameUpdatedEvent")
+                {
+                    //read field
+                    var id = Guid.Parse(valueResult["Id"].ToString()!);
+                    var name = Convert.ToString(valueResult["Name"]);
+
+                    var product = await dbContext.Products.FindAsync(id);
+                    if (product is not null)
+                    {
+                        product.Name = name!;
+                        await dbContext.SaveChangesAsync(stoppingToken);
+                    }
                 }
 
 
-                await Task.Delay(1000, stoppingToken);
+                vehicleConsumer.Consumer.Commit(consumeResult);
             }
+
+
+            await Task.Delay(1000, stoppingToken);
         }
     }
 }
