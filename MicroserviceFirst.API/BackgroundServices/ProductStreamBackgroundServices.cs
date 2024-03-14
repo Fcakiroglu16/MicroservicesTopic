@@ -69,7 +69,7 @@ public class ProductStreamBackgroundServices(IConfiguration configuration, IServ
                     }
                 }
 
-
+                Console.WriteLine(valueResult.Schema.Name);
                 vehicleConsumer.Consumer.Commit(consumeResult);
             }
 
