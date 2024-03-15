@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\services\\compositeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\services\\compositeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\composition.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\composition.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\services\\compositeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\services\\compositeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\services\\stockservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\services\\stockservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\models\\productcompositeresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\models\\productcompositeresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\services\\stockservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\services\\stockservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\composition.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|solutionrelative:composition.api\\composition.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF0BCEF8-9215-491F-BF24-A8DBEEAC9113}|Composition.API\\Composition.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\composition.api\\models\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Composition.API.http",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Composition.API.http",
               "RelativeDocumentMoniker": "Composition.API\\Composition.API.http",
@@ -119,26 +119,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CompositeService.cs",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Services\\CompositeService.cs",
               "RelativeDocumentMoniker": "Composition.API\\Services\\CompositeService.cs",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Services\\CompositeService.cs \u2B24",
-              "RelativeToolTip": "Composition.API\\Services\\CompositeService.cs \u2B24",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAsAAAA",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Services\\CompositeService.cs",
+              "RelativeToolTip": "Composition.API\\Services\\CompositeService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T22:20:40.317Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ProductCompositeResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Models\\ProductCompositeResponseDto.cs",
               "RelativeDocumentMoniker": "Composition.API\\Models\\ProductCompositeResponseDto.cs",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Models\\ProductCompositeResponseDto.cs \u2B24",
-              "RelativeToolTip": "Composition.API\\Models\\ProductCompositeResponseDto.cs \u2B24",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Models\\ProductCompositeResponseDto.cs",
+              "RelativeToolTip": "Composition.API\\Models\\ProductCompositeResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T22:04:46.252Z",
               "EditorCaption": ""
@@ -171,39 +171,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "StockServices.cs",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Services\\StockServices.cs",
               "RelativeDocumentMoniker": "Composition.API\\Services\\StockServices.cs",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Services\\StockServices.cs \u2B24",
-              "RelativeToolTip": "Composition.API\\Services\\StockServices.cs \u2B24",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Services\\StockServices.cs",
+              "RelativeToolTip": "Composition.API\\Services\\StockServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T21:58:21.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductServices.cs",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Services\\ProductServices.cs",
               "RelativeDocumentMoniker": "Composition.API\\Services\\ProductServices.cs",
               "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Services\\ProductServices.cs",
               "RelativeToolTip": "Composition.API\\Services\\ProductServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T21:58:14.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Program.cs",
               "RelativeDocumentMoniker": "Composition.API\\Program.cs",
               "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Composition.API\\Program.cs",
               "RelativeToolTip": "Composition.API\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAaAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T21:57:23.462Z",
               "EditorCaption": ""

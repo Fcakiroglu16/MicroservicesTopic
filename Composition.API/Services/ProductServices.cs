@@ -6,7 +6,7 @@ namespace Composition.API.Services
     {
         public async Task<ProductResponseDto?> Get(int id)
         {
-            var response= await http.GetAsync($"/api/products/{id}");
+            var response = await http.GetAsync($"/api/products/{id}");
 
             //if
             return response.IsSuccessStatusCode ? await response.Content.ReadFromJsonAsync<ProductResponseDto>() : null;

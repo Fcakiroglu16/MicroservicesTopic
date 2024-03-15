@@ -27,7 +27,16 @@ app.UseHttpsRedirection();
 
 app.MapGet("api/products-composite/{id}",
     async (int id, CompositeService compositeService) =>
-        Results.Ok((object?)await compositeService.GetProductWithFull(id)));
+    {
+        var result = await compositeService.GetProductWithFull(id);
+
+        if (result is null)
+        {
+            return Results.NotFound();
+        }
+
+        return Results.Ok(result);
+    });
 
 
 app.Run();
