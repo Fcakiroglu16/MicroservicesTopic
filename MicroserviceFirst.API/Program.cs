@@ -12,9 +12,6 @@ builder.Services.AddHttpClient<MicroserviceSecondService>(configure =>
     configure.BaseAddress = new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!));
 
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,30 +24,20 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapPost("/api/products/create", async (AppDbContext context) =>
+app.MapGet("/api/products/{productId}", (int productId) =>
 {
-    context.Products.Add(new Product() { Name = "Pen 1", Price = 100 });
-    context.SaveChanges();
-
-    return Results.Ok("Product created");
-});
-
-app.MapPost("/api/products/update", async (AppDbContext context) =>
-{
-    var product = context.Products.First();
-    product.Name = $"{product.Name}- {product.Name}";
-    context.SaveChanges();
-
-    return Results.Ok("Product created");
-});
-
-app.MapGet("/api/SendRequestToMicroserviceTwo",
-    async (MicroserviceSecondService secondMicroserviceService) =>
+    var productList = new List<Product>
     {
-        var response = await secondMicroserviceService.GetProducts();
+        new Product { Id = 1, Name = "Product 1", Price = 100 },
+        new Product { Id = 2, Name = "Product 2", Price = 200 },
+        new Product { Id = 3, Name = "Product 3", Price = 300 },
+        new Product { Id = 4, Name = "Product 4", Price = 400 },
+        new Product { Id = 5, Name = "Product 5", Price = 500 },
+    };
 
 
-        return Results.Ok(response);
-    }).WithName("SendRequestToMicroserviceTwo").WithOpenApi();
+    return Results.Ok(productList.FirstOrDefault(x => x.Id == productId));
+});
+
 
 app.Run();

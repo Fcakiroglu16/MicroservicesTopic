@@ -1,5 +1,4 @@
-using MicroserviceSecond.API.BackgroundServices;
-using MicroserviceSecond.API.Products;
+using MicroserviceSecond.API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddHostedService<ProductChangeDataCaptureBackgroundService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,7 +19,19 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapGroup("/api/products").MapProductApi().WithTags("Products Api");
+app.MapGet("api/stocks/{productId}", (int productId) =>
+{
+    var stock = new Stock()
+    {
+        Id = 20,
+        ProductId = 1,
+        Code = "ABC",
+        Count = 20,
+        Type = "A"
+    };
+
+    return Results.Ok(stock);
+});
 
 #region legacy routing
 
