@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+
+  loadbalancing.yarp:
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "6000:8080"
+  microservicefirst.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - Instance=One
+    ports:
+      - "5000:8080"
+  microservicesecond.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - Instance=Two
+    ports:
+      - "5002:8080"

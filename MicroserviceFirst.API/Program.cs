@@ -15,20 +15,12 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseSwagger();
+app.UseSwaggerUI();
 
+app.MapGet("/api/products/create", () => Results.Ok(Environment.GetEnvironmentVariable("Instance")));
 
-app.MapGet("/api/SendRequestToMicroserviceTwo",
-    async (MicroserviceSecondService secondMicroserviceService) =>
-    {
-        var response = await secondMicroserviceService.GetProducts();
-
-
-        return Results.Ok(response);
-    }).WithName("SendRequestToMicroserviceTwo").WithOpenApi();
 
 app.Run();

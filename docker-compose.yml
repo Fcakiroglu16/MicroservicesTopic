@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  loadbalancing.yarp:
+    image: ${DOCKER_REGISTRY-}loadbalancing.yarp
+    build:
+      context: .
+      dockerfile: LoadBalancing.YARP/Dockerfile
+  microservicefirst.api:
+    image: ${DOCKER_REGISTRY-}microservicefirstapi
+    build:
+      context: .
+      dockerfile: MicroserviceFirst.API/Dockerfile
+  microservicesecond.api:
+    image: ${DOCKER_REGISTRY-}microservicefirstapi
+    build:
+      context: .
+      dockerfile: MicroserviceFirst.API/Dockerfile

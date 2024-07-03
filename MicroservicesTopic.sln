@@ -1,8 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceFirst.API", "MicroserviceFirst.API\MicroserviceFirst.API.csproj", "{549EDE38-DF13-4782-8202-EE1114FFCDC6}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceFirst.API", "MicroserviceFirst.API\MicroserviceFirst.API.csproj", "{549EDE38-DF13-4782-8202-EE1114FFCDC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceSecond.API", "MicroserviceSecond.API\MicroserviceSecond.API.csproj", "{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceSecond.API", "MicroserviceSecond.API\MicroserviceSecond.API.csproj", "{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadBalancing.YARP", "LoadBalancing.YARP\LoadBalancing.YARP.csproj", "{0190458B-38C0-4618-89C5-04E939DD0CC7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +25,19 @@ Global
 		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0190458B-38C0-4618-89C5-04E939DD0CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0190458B-38C0-4618-89C5-04E939DD0CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0190458B-38C0-4618-89C5-04E939DD0CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0190458B-38C0-4618-89C5-04E939DD0CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B465B361-9F77-4287-9B4D-9E89F0BE0C50}
 	EndGlobalSection
 EndGlobal
