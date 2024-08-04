@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+ consul:
+  image: hashicorp/consul:latest
+  container_name: Consul
+  

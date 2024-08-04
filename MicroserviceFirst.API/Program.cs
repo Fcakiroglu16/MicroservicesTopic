@@ -1,4 +1,7 @@
 using MicroserviceFirst.API;
+using Steeltoe.Common.Http.Discovery;
+using Steeltoe.Discovery.Client;
+using Steeltoe.Discovery.Consul;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,9 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<MicroserviceSecondService>(configure =>
-    configure.BaseAddress = new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!));
+        configure.BaseAddress =
+            new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!))
+    .AddServiceDiscovery();
 
-
+builder.Services.AddServiceDiscovery(o => o.UseConsul());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -19,7 +24,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 
 app.MapGet("/api/SendRequestToMicroserviceTwo",
