@@ -1,3 +1,5 @@
+using MassTransit;
+using MicroserviceSecond.API.Consumers;
 using MicroserviceSecond.API.Products;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,22 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+// add masstransit rabbitmq to services
+
+builder.Services.AddMassTransit(configure =>
+{
+    configure.AddConsumer<UserCreatedEventConsumer>();
+    configure.UsingRabbitMq((context, rabbitConfigure) =>
+    {
+        rabbitConfigure.Host("localhost", x => { });
+
+        rabbitConfigure.ReceiveEndpoint("order.created.event-response.queue",
+            e => { e.ConfigureConsumer<UserCreatedEventConsumer>(context); });
+    });
+});
+
 
 var app = builder.Build();
 
