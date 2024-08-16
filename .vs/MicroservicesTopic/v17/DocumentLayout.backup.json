@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}|Solution Items{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}|C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Ratelimiter.md||{24510B54-A648-4D69-A6C5-F68CBDF07546}",
+      "RelativeMoniker": "D:0:0:{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}|Solution Items{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}|solutionrelative:Ratelimiter.md||{24510B54-A648-4D69-A6C5-F68CBDF07546}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}|Solution Items{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}|C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\ReadMe.md||{24510B54-A648-4D69-A6C5-F68CBDF07546}",
+      "RelativeMoniker": "D:0:0:{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}|Solution Items{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}|solutionrelative:ReadMe.md||{24510B54-A648-4D69-A6C5-F68CBDF07546}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\microservicesecondservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\microservicesecondservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ratelimiter.md",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Ratelimiter.md",
+              "RelativeDocumentMoniker": "Ratelimiter.md",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\Ratelimiter.md",
+              "RelativeToolTip": "Ratelimiter.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-16T20:53:35.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReadMe.md",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\ReadMe.md",
+              "RelativeDocumentMoniker": "ReadMe.md",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\ReadMe.md \u2B24",
+              "RelativeToolTip": "ReadMe.md \u2B24",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-16T20:47:59.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MicroserviceSecondService.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\MicroserviceSecondService.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\MicroserviceSecondService.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\MicroserviceSecondService.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\MicroserviceSecondService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwEUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T20:21:20.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Program.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Program.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Program.cs",
+              "RelativeToolTip": "MicroserviceFirst.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T20:12:11.634Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

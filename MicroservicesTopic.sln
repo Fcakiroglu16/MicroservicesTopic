@@ -1,8 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceFirst.API", "MicroserviceFirst.API\MicroserviceFirst.API.csproj", "{549EDE38-DF13-4782-8202-EE1114FFCDC6}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceFirst.API", "MicroserviceFirst.API\MicroserviceFirst.API.csproj", "{549EDE38-DF13-4782-8202-EE1114FFCDC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceSecond.API", "MicroserviceSecond.API\MicroserviceSecond.API.csproj", "{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceSecond.API", "MicroserviceSecond.API\MicroserviceSecond.API.csproj", "{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49C00AA9-3636-4F3B-ACB6-9D014CB50B5F}"
+	ProjectSection(SolutionItems) = preProject
+		Hedging.md = Hedging.md
+		Ratelimiter.md = Ratelimiter.md
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +28,11 @@ Global
 		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E474C28C-E9B4-4B10-B41D-30A294E9B6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41AFB32E-6933-4710-9877-C819CC43EE17}
 	EndGlobalSection
 EndGlobal

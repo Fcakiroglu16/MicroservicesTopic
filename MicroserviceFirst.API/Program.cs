@@ -1,5 +1,6 @@
-using MicroserviceFirst.API;
+﻿using MicroserviceFirst.API;
 using Polly;
+using Polly.Extensions.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,26 +10,28 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-#region BulkHead Design
+// Polly politikasını yapılandırıyoruz
+var retryPolicy = HttpPolicyExtensions
+    .HandleTransientHttpError() // HTTP 5xx, 408 ve network hatalarını yakalar
+    /*.OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.NotFound)*/ // 404 hatalarını da yakalar
+    .WaitAndRetryAsync(3,
+        retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))); // 3 kez dene, aradaki süreyi arttır
 
-static IAsyncPolicy<HttpResponseMessage> GetBulkheadPolicy(int maxConcurrentRequests)
-{
-    return Policy.BulkheadAsync(maxConcurrentRequests, int.MaxValue)
-        .AsAsyncPolicy<HttpResponseMessage>();
-}
+var circuitBreakerPolicy = HttpPolicyExtensions
+    .HandleTransientHttpError()
+    .CircuitBreakerAsync(2, TimeSpan.FromMinutes(1)); // 2 hata sonrası 1 dakika devreye girmez
 
-static IAsyncPolicy<HttpResponseMessage> GetTimeoutPolicy(int seconds)
-{
-    return Policy.TimeoutAsync<HttpResponseMessage>(seconds);
-}
+var timeoutPolicy = Policy.TimeoutAsync<HttpResponseMessage>(5);
 
-#endregion
+
+var combinedPolicy = Policy.WrapAsync(retryPolicy, circuitBreakerPolicy, timeoutPolicy);
+
 
 builder.Services.AddHttpClient<MicroserviceSecondService>(configure =>
 {
     configure.BaseAddress =
         new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!);
-}).AddPolicyHandler(GetBulkheadPolicy(10)).AddPolicyHandler(GetTimeoutPolicy(1));
+}).AddPolicyHandler(combinedPolicy);
 
 
 var app = builder.Build();
