@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A62674D8-579E-43CB-8135-3250B32A201F}|Solution Items{A62674D8-579E-43CB-8135-3250B32A201F}|C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A62674D8-579E-43CB-8135-3250B32A201F}|Solution Items{A62674D8-579E-43CB-8135-3250B32A201F}|solutionrelative:ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}|docker-compose.dcproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}|docker-compose.dcproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\microservicefirst.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{549EDE38-DF13-4782-8202-EE1114FFCDC6}|MicroserviceFirst.API\\MicroserviceFirst.API.csproj|solutionrelative:microservicefirst.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0190458B-38C0-4618-89C5-04E939DD0CC7}|LoadBalancing.YARP\\LoadBalancing.YARP.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\loadbalancing.yarp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0190458B-38C0-4618-89C5-04E939DD0CC7}|LoadBalancing.YARP\\LoadBalancing.YARP.csproj|solutionrelative:loadbalancing.yarp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0190458B-38C0-4618-89C5-04E939DD0CC7}|LoadBalancing.YARP\\LoadBalancing.YARP.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\loadbalancing.yarp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0190458B-38C0-4618-89C5-04E939DD0CC7}|LoadBalancing.YARP\\LoadBalancing.YARP.csproj|solutionrelative:loadbalancing.yarp\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0190458B-38C0-4618-89C5-04E939DD0CC7}|LoadBalancing.YARP\\LoadBalancing.YARP.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\loadbalancing.yarp\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0190458B-38C0-4618-89C5-04E939DD0CC7}|LoadBalancing.YARP\\LoadBalancing.YARP.csproj|solutionrelative:loadbalancing.yarp\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}|docker-compose.dcproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4147A6A5-76A5-4972-BDF8-AAEDF65EE2FE}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0190458B-38C0-4618-89C5-04E939DD0CC7}|LoadBalancing.YARP\\LoadBalancing.YARP.csproj|c:\\users\\f-cak\\source\\repos\\fcakiroglu16\\microservicestopic\\loadbalancing.yarp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -42,178 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\ReadMe.txt",
-              "RelativeDocumentMoniker": "ReadMe.txt",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\ReadMe.txt",
-              "RelativeToolTip": "ReadMe.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-07-03T09:27:03.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\LoadBalancing.YARP\\Program.cs",
-              "RelativeDocumentMoniker": "LoadBalancing.YARP\\Program.cs",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\LoadBalancing.YARP\\Program.cs",
-              "RelativeToolTip": "LoadBalancing.YARP\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Program.cs",
+              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Program.cs",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Program.cs \u2B24",
+              "RelativeToolTip": "MicroserviceFirst.API\\Program.cs \u2B24",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T09:13:49.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Dockerfile",
-              "RelativeDocumentMoniker": "MicroserviceFirst.API\\Dockerfile",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\MicroserviceFirst.API\\Dockerfile",
-              "RelativeToolTip": "MicroserviceFirst.API\\Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-03T09:13:27.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "docker-compose.override.yml",
-              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\docker-compose.override.yml",
-              "RelativeDocumentMoniker": "docker-compose.override.yml",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\docker-compose.override.yml",
-              "RelativeToolTip": "docker-compose.override.yml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-03T09:12:49.906Z",
+              "WhenOpened": "2024-09-15T20:37:51.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-15T20:36:19.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-03T09:11:53.501Z",
+              "WhenOpened": "2024-09-15T20:36:17.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\LoadBalancing.YARP\\Dockerfile",
-              "RelativeDocumentMoniker": "LoadBalancing.YARP\\Dockerfile",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\LoadBalancing.YARP\\Dockerfile",
-              "RelativeToolTip": "LoadBalancing.YARP\\Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-03T09:11:50.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\LoadBalancing.YARP\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "LoadBalancing.YARP\\appsettings.Production.json",
-              "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\LoadBalancing.YARP\\appsettings.Production.json",
-              "RelativeToolTip": "LoadBalancing.YARP\\appsettings.Production.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-03T09:11:26.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\LoadBalancing.YARP\\appsettings.Development.json",
               "RelativeDocumentMoniker": "LoadBalancing.YARP\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\f-cak\\source\\repos\\Fcakiroglu16\\MicroservicesTopic\\LoadBalancing.YARP\\appsettings.Development.json",
               "RelativeToolTip": "LoadBalancing.YARP\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-03T09:11:25.426Z",
+              "WhenOpened": "2024-09-15T20:34:09.645Z",
               "EditorCaption": ""
             }
           ]

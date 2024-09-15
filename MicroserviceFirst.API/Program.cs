@@ -21,6 +21,6 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.MapGet("/api/products/create", () => Results.Ok(Environment.GetEnvironmentVariable("Instance")));
-
+app.MapGet("/api/products", () => Results.Ok(new List<string>() { "kalem 1", "kalem 2" }));
 
 app.Run();
