@@ -1,0 +1,6 @@
+@YARP.API_HostAddress = http://localhost:6000
+
+GET {{YARP.API_HostAddress}}/microservice-one/api/products/create
+Accept: application/json
+
+###
