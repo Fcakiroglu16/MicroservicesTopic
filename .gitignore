@@ -15,3 +15,6 @@ riderModule.iml
 /.vs/MicroservicesTopic/v17/.futdcache.v2
 *.vsidx
 /.vs/MicroservicesTopic/CopilotIndices/17.14.794.21998
+/redis-slave-2
+/redis-slave-1
+/redis-master

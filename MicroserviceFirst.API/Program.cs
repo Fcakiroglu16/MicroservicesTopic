@@ -1,4 +1,6 @@
 using MicroserviceFirst.API;
+using MicroserviceFirst.API.Redis;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,32 @@ builder.Services.AddHttpClient<MicroserviceSecondService>(configure =>
     configure.BaseAddress = new Uri(builder.Configuration.GetSection("MicroserviceBaseUrls")["MicroserviceSecond"]!));
 
 
+
+builder.Services.AddOptions<RedisOption>().BindConfiguration(nameof(RedisOption))
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
+builder.Services.AddSingleton(sp => sp.GetRequiredService<IOptions<RedisOption>>().Value);
+
+builder.Services.AddSingleton(sp =>
+{
+    var redisOptions = sp.GetRequiredService<RedisOption>();
+
+    var logger = sp.GetRequiredService<ILogger<RedisService>>();
+
+    return new RedisService(redisOptions, logger);
+});
+
 var app = builder.Build();
+
+
+using (var scope = app.Services.CreateScope())
+{
+    
+    
+    var redisService = scope.ServiceProvider.GetRequiredService<RedisService>();
+  
+    
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -19,7 +46,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
 
 
 app.MapGet("/api/SendRequestToMicroserviceTwo",
@@ -30,5 +56,18 @@ app.MapGet("/api/SendRequestToMicroserviceTwo",
 
         return Results.Ok(response);
     }).WithName("SendRequestToMicroserviceTwo").WithOpenApi();
+
+
+
+app.MapGet("/api/redis", (RedisService redisService) =>
+    {
+
+        redisService.GetDb().StringSet("key1", "key1-value");
+
+        var value = redisService.GetDb().StringGet("key1");
+
+
+        return Task.FromResult(Results.Ok(value.ToString()));
+    }).WithName("redis").WithOpenApi();
 
 app.Run();
